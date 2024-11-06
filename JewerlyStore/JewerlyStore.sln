@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewerlyStore", "JewerlyStore\JewerlyStore.csproj", "{6CFEC29E-F267-4A14-B2A7-2260D900FBB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{10A528D5-8E7D-4B39-B567-15345F9E4579}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6D9E3403-F68B-46A6-A023-2144496E8127}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6F729C88-16A1-4B05-8777-076EE60F384F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeverlyStore.DAL", "JeverlyStore.DAL\JeverlyStore.DAL.csproj", "{B00D49C6-4198-4AF9-8463-678A2A2F8E94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeverlyStroe.Domain", "JeverlyStroe.Domain\JeverlyStroe.Domain.csproj", "{58AAE1F4-075D-4BA4-87A1-C28126B55EA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewerlyStore.Service", "JewerlyStore.Service\JewerlyStore.Service.csproj", "{95A8D261-BA03-4B65-AE10-39339347FB00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CFEC29E-F267-4A14-B2A7-2260D900FBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFEC29E-F267-4A14-B2A7-2260D900FBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFEC29E-F267-4A14-B2A7-2260D900FBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFEC29E-F267-4A14-B2A7-2260D900FBB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00D49C6-4198-4AF9-8463-678A2A2F8E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00D49C6-4198-4AF9-8463-678A2A2F8E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00D49C6-4198-4AF9-8463-678A2A2F8E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00D49C6-4198-4AF9-8463-678A2A2F8E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AAE1F4-075D-4BA4-87A1-C28126B55EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AAE1F4-075D-4BA4-87A1-C28126B55EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AAE1F4-075D-4BA4-87A1-C28126B55EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AAE1F4-075D-4BA4-87A1-C28126B55EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A8D261-BA03-4B65-AE10-39339347FB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A8D261-BA03-4B65-AE10-39339347FB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A8D261-BA03-4B65-AE10-39339347FB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A8D261-BA03-4B65-AE10-39339347FB00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B00D49C6-4198-4AF9-8463-678A2A2F8E94} = {10A528D5-8E7D-4B39-B567-15345F9E4579}
+		{58AAE1F4-075D-4BA4-87A1-C28126B55EA0} = {6F729C88-16A1-4B05-8777-076EE60F384F}
+		{95A8D261-BA03-4B65-AE10-39339347FB00} = {6D9E3403-F68B-46A6-A023-2144496E8127}
+	EndGlobalSection
+EndGlobal
