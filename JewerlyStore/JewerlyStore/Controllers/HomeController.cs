@@ -31,4 +31,14 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult CustomProduct()
+    {
+        return View();
+    }
+
+    public IActionResult Contacts()
+    {
+        return View();
+    }
 }

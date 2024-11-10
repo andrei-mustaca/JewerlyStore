@@ -10,25 +10,27 @@
 </head>
 <body>
 <script src="~/js/shared_site.js"></script>
+<script src="~/js/LoginRegistrationScript.js"></script>
 
+@await Html.PartialAsync("LoginRegistration")
 <div id="header-top">
     <div class="logo">Вдохновение</div>
     <div class="button-header">
-        <button class="button">Войти</button>
+        <button class="button" id="click-to-hide">Войти</button>
     </div>
 </div>
 
-<img class="img-header" src="~/Images/jewelry2.png"/>
+<img class="img-header" alt="" src="~/Images/jewelry2.png"/>
 
 <div id="header-bottom">
     <div class="menu">
         <ul>
             <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
             <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
             <li><a href="#promotion">Акции</a></li>
             <li><a href="#countries">Каталог</a></li>
-            <li><a href="#services">Изделия на заказ</a></li>
+            <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
             <li><a href="#complaint">Жалобы</a></li>
         </ul>
     </div>
@@ -41,6 +43,6 @@
 </body>
 <footer >
     <p class="text1"> © 2024 MMM</p>
-    <p class="text1">Подробнее о нас можете узнать тут:<a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+    <p class="text1">Подробнее о нас можете узнать тут:<a href="https://www.instagram.com/v.oo4k0/profilecard/?igsh=dDU5emNhenVvdTZ3" target="_blank">Instagram</a></p>
 </footer>
 </html>

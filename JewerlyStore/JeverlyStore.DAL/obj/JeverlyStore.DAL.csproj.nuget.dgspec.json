@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\OneDrive\\Документы\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj": {}
+    "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\OneDrive\\Документы\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj": {
+    "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Документы\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj",
         "projectName": "JeverlyStore.DAL",
-        "projectPath": "C:\\Users\\andre\\OneDrive\\Документы\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj",
+        "projectPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\OneDrive\\Документы\\JewerlyStore\\JeverlyStore.DAL\\obj\\",
+        "outputPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

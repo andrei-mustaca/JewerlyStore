@@ -24,3 +24,29 @@ C:\Users\andre\OneDrive\Документы\JewerlyStore\JewerlyStore\obj\Debug\n
 C:\Users\andre\OneDrive\Документы\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.pdb
 C:\Users\andre\OneDrive\Документы\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.genruntimeconfig.cache
 C:\Users\andre\OneDrive\Документы\JewerlyStore\JewerlyStore\obj\Debug\net6.0\ref\JewerlyStore.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\appsettings.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.staticwebassets.runtime.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.exe
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.deps.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.runtimeconfig.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.RazorAssemblyInfo.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.RazorAssemblyInfo.cs
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\scopedcss\bundle\JewerlyStore.styles.css
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\scopedcss\projectbundle\JewerlyStore.bundle.scp.css
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\refint\JewerlyStore.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\ref\JewerlyStore.dll
