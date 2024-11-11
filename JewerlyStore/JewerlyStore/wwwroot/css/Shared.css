@@ -300,3 +300,57 @@ body {
     max-width: 960px;  
     font-style: italic; 
 }
+
+.block-message{
+    display:grid;
+    width:82%;
+}
+
+.block-message p {
+    white-space: nowrap;
+}
+
+
+.message-text{
+    display:grid;
+    padding:10px;
+    margin-top: 20px;
+}
+
+.message-text .text{
+    height: 350px;
+    resize: none;
+}
+
+.message-button{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.message-button .button{
+    border:none;
+    background-color: #000;
+    padding:15px 30px;
+    border-radius: 3px;
+    color:#fff;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition:all 250ms ease;
+}
+
+.message-button .button:hover{
+    color:#000;
+    background-color: #2c3034;
+}
+
+.text2{
+    text-align: left;
+    margin-left: 40px;
+    color:#000;
+}
+
+
+
+

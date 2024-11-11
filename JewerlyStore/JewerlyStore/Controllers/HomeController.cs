@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using JeverlyStroe.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JewerlyStore.Controllers;
@@ -40,5 +41,37 @@ public class HomeController : Controller
     public IActionResult Contacts()
     {
         return View();
+    }
+
+    public IActionResult Complaints()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Login([FromBody] LoginViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            return Ok(model); 
+        }
+
+        var errors = ModelState.Values.SelectMany(v => v.Errors)
+            .Select(e => e.ErrorMessage)
+            .ToList();
+        return BadRequest(errors);
+    }
+
+    [HttpPost]
+    public IActionResult Register([FromBody] RegisterViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            var errors=ModelState.Values.SelectMany(v => v.Errors)
+                .Select(e=>e.ErrorMessage)
+                .ToList();
+            return BadRequest(errors);
+        }
+        return Ok(model);
     }
 }

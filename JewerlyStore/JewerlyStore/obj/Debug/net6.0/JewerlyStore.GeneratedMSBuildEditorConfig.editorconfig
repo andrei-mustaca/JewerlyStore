@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Home/Complaints.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wbGFpbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Home/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

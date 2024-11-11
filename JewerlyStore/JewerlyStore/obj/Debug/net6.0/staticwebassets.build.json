@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fNgz/hPSvJjL8hnrV76VY274F6TUw7d7UHzcAz4Gx3E=",
+  "Hash": "8bSnNenDh1ver0HI+ltsyEds9t22NCgwUTwg4KmPdz4=",
   "Source": "JewerlyStore",
   "BasePath": "_content/JewerlyStore",
   "Mode": "Default",
@@ -321,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\product6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\work.jpg",
+      "SourceId": "JewerlyStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\",
+      "BasePath": "_content/JewerlyStore",
+      "RelativePath": "Images/work.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\work.jpg"
     },
     {
       "Identity": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\js\\CustomProductScript.js",

@@ -50,3 +50,6 @@ C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.pdb
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.genruntimeconfig.cache
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\ref\JewerlyStore.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JeverlyStroe.Domain.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JeverlyStroe.Domain.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyStore.csproj.CopyComplete

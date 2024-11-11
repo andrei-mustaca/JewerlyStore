@@ -173,3 +173,16 @@ span{
     left:0;
     transition:0.25s;
 }
+
+#error-messages-signin{
+    margin-top: 10px;
+}
+
+.error{
+    color:red;
+    font-size: 13px;
+}
+
+#error-messages-signup{
+    margin-top: 10px;
+}

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "JeverlyStroe.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/JeverlyStroe.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeverlyStroe.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "JeverlyStroe.Domain/1.0.0": {
+      "type": "project",
+      "path": "../JeverlyStroe.Domain/JeverlyStroe.Domain.csproj",
+      "msbuildProject": "../JeverlyStroe.Domain/JeverlyStroe.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "JeverlyStroe.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\andre\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStroe.Domain\\JeverlyStroe.Domain.csproj": {
+              "projectPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStroe.Domain\\JeverlyStroe.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

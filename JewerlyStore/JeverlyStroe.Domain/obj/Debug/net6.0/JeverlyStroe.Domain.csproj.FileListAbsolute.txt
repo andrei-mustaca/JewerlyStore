@@ -1,0 +1,12 @@
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\bin\Debug\net6.0\JeverlyStroe.Domain.deps.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\bin\Debug\net6.0\JeverlyStroe.Domain.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\bin\Debug\net6.0\JeverlyStroe.Domain.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\refint\JeverlyStroe.Domain.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\JeverlyStroe.Domain.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JeverlyStroe.Domain\obj\Debug\net6.0\ref\JeverlyStroe.Domain.dll
