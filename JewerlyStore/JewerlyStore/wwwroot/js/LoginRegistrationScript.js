@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded',function (){
                 });
         });
     }
+    document.getElementById("side-menu-button-click-to-hide").addEventListener("click", hiddenOpen_Closeclick);
 });
 
 

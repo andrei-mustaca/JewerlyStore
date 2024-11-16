@@ -1,3 +1,6 @@
+using JeverlyStore.DAL;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,8 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+string connection=builder.Configuration.GetConnectionString("DefaultConnection");
+//builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connection));
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

@@ -1,0 +1,14 @@
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JewerlyStore.Service.deps.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JewerlyStore.Service.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JewerlyStore.Service.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\refint\JewerlyStore.Service.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\ref\JewerlyStore.Service.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JewerlyStore.Service.runtimeconfig.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.genruntimeconfig.cache
