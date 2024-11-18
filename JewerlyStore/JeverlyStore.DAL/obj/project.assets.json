@@ -15,11 +15,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/7.0.20": {
+      "Microsoft.EntityFrameworkCore/7.0.18": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.20",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.18",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.18",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
@@ -38,7 +38,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.20": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.18": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -51,7 +51,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.20": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.18": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -60,11 +60,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/7.0.20": {
+      "Microsoft.EntityFrameworkCore.Design/7.0.18": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.18",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Mono.TextTemplating": "2.2.1"
         },
@@ -82,10 +82,10 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.20": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.18": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore": "7.0.18",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "compile": {
@@ -116,10 +116,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.20": {
+      "Microsoft.EntityFrameworkCore.Tools/7.0.18": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.20"
+          "Microsoft.EntityFrameworkCore.Design": "7.0.18"
         },
         "compile": {
           "lib/net6.0/_._": {}
@@ -413,7 +413,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Npgsql/7.0.7": {
+      "Npgsql/7.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
@@ -1745,6 +1745,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.18",
+          "Npgsql": "7.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.18",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
@@ -1776,10 +1778,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.EntityFrameworkCore/7.0.20": {
-      "sha512": "Wvmktob+dBPvMZdTj2yRrfDi3ERL/RRcE8EWjr3DuIjWn+6giqD81+oNM/09IthwZ3IsSMHgpiVVmTwAW92gEQ==",
+    "Microsoft.EntityFrameworkCore/7.0.18": {
+      "sha512": "zk4JC8m9T55dwtqBnnXar1jtI7q4bZuSo3PI8/Iq7QbVk0D2Yrvx0mZJb/5tj8O+ghwT56XzDuN3641iumXqmg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/7.0.20",
+      "path": "microsoft.entityframeworkcore/7.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1787,42 +1789,42 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
+        "microsoft.entityframeworkcore.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.20": {
-      "sha512": "ds6XFVrh34AWYAedlMo8tVkmxsxyXnwP0N6FTjlq4p1oR6TQktIabUDkSMKgStVYt4c4b4Rus3H/Oad9I4uSlQ==",
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.18": {
+      "sha512": "KCEaYiYM6bVGKo/dLRDkXn1zZ1Vn6f4uG0nb2iis/jCju16hUOX/GAOLx1FhD2cIQcHRvtmYFZnm5/anHFdhtg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.20",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.20": {
-      "sha512": "doouHLWFcYcd08QUh9+4aZu3sk4WySp/aSOHeIzNhMJ58ESQXUAGDvB1sjJ4HmE0tmCea51NGzgtHE5IBmFLGg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.18": {
+      "sha512": "qD7GuyGVQvndDJdYbv5UTuxJeeH/cVS1VBz3ZY72yCYKnSEx9hpiokCji1bgy9cHA1rPNjI7OA7ZrDOeojMtOA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.20",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/7.0.20": {
-      "sha512": "rjxhuC9nUzBdZYxvTpKxuUGzIlGPf5Aj01HzOj7Y4G00PDM4QM5GdRUHGSujNkuwB3oD2j2zHPxwhIqQCznRfg==",
+    "Microsoft.EntityFrameworkCore.Design/7.0.18": {
+      "sha512": "4pYsUcvdY8V4i+ZH6xIM8LfX3YdaRp7kZ0QvgRdzGuJ/dneX8zRKLE0rlqFRb8xQqbw6TuFssgFBkh0c23R3oA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/7.0.20",
+      "path": "microsoft.entityframeworkcore.design/7.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1830,21 +1832,21 @@
         "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.7.0.20.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.20": {
-      "sha512": "25GWyYLMm4T+iuxJLhXR/GTzeYR7tIhYUOCIaWkSFTI4FB39yQz8wg5EfyhPUL4Jfhjk94X+yFsff/HoNaCVIA==",
+    "Microsoft.EntityFrameworkCore.Relational/7.0.18": {
+      "sha512": "19T8HjEkqyvuPf6C3WPM1B0h10/ezf/+KHPFQxp8ODHN3YKjV/5tKyuZyjRULa3EcfTW4TiaOqPIfs5WSVfwYw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/7.0.20",
+      "path": "microsoft.entityframeworkcore.relational/7.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.7.0.20.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -1863,17 +1865,17 @@
         "microsoft.entityframeworkcore.relational.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.20": {
-      "sha512": "tu4A/gRuWxAg0c+7i+SzP5VYDwPUTgcND6ymNxwgcLBXr24tG16sNqUn7/fpMhBTeXIpceHu5DgQ2RJTtwoJag==",
+    "Microsoft.EntityFrameworkCore.Tools/7.0.18": {
+      "sha512": "AuSrOsR/DN5OYuiaYxr+zk5bHgHB7o5TFK7ZbBp8rqKLw9eZSwgBfHi8pYvEMzvgw3z7TJvvcuDT5qVQbZcUUQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/7.0.20",
+      "path": "microsoft.entityframeworkcore.tools/7.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.7.0.20.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -2304,10 +2306,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Npgsql/7.0.7": {
-      "sha512": "A3BjyNebHjw/MahM6n3VnKbxrj/hQnMROEkUNUTjhUVv7yvcGnfBgw/FszahT9uCR23AVD2N/0Tvw1aHgxr9Gg==",
+    "Npgsql/7.0.8": {
+      "sha512": "0WDtkUi/U6katqRLBdjQi75KZFc7sKKK67IM3n19HKIAnGdUOCcrREoiU+EKD6S4if7tJtk4mtEIRfPtSu5K5A==",
       "type": "package",
-      "path": "npgsql/7.0.7",
+      "path": "npgsql/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2324,7 +2326,7 @@
         "lib/netstandard2.0/Npgsql.xml",
         "lib/netstandard2.1/Npgsql.dll",
         "lib/netstandard2.1/Npgsql.xml",
-        "npgsql.7.0.7.nupkg.sha512",
+        "npgsql.7.0.8.nupkg.sha512",
         "npgsql.nuspec",
         "postgresql.png"
       ]
@@ -5704,8 +5706,10 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "JeverlyStroe.Domain >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Design >= 7.0.20",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.20",
+      "Microsoft.EntityFrameworkCore >= 7.0.18",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.18",
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
+      "Npgsql >= 7.0.8",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.18",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0"
     ]
@@ -5713,7 +5717,7 @@
   "packageFolders": {
     "C:\\Users\\andre\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -5727,7 +5731,7 @@
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
@@ -5768,17 +5772,25 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.18, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.20, )"
+            "version": "[7.0.18, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.20, )"
+            "version": "[7.0.18, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[7.0.8, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",

@@ -12,3 +12,4 @@ C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\ref\JewerlyStore.Service.dll
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JewerlyStore.Service.runtimeconfig.json
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.sourcelink.json

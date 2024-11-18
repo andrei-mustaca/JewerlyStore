@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JeverlyStore.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cb6df4fb3b46b7efe3bf1c1d38fccd33074f826")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+477e9fdcfb14683db3135f578c08408ac65933b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("JeverlyStore.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JeverlyStore.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
