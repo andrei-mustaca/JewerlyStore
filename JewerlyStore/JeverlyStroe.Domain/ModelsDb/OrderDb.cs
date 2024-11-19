@@ -10,10 +10,16 @@ public class OrderDb
     public Guid IdUser { get; set; }
     [Column("idProduct")]
     public Guid IdProduct { get; set; }
+    [Column("idRequest")]
+    public Guid IdRequest { get; set; }
     [Column("name")]
     public string Name { get; set; }
     [Column("cost")]
     public double Cost { get; set; }
     [Column("createdAt", TypeName = "timestamp")]
     public DateTime CreatedAt { get; set; }
+    
+    public List<ProductDb>Product { get; set; }
+    public UserDb User { get; set; }
+    public RequestDb Request { get; set; }
 }

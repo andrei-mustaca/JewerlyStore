@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace JeverlyStore.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241118115332_Init")]
-    partial class Init
+    [Migration("20241119145754_Init6")]
+    partial class Init6
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,6 +50,32 @@ namespace JeverlyStore.DAL.Migrations
                     b.ToTable("categories");
                 });
 
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPicture", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
+
+                    b.Property<Guid>("CategoriesId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("IdCategory")
+                        .HasColumnType("uuid")
+                        .HasColumnName("idCategories");
+
+                    b.Property<string>("PathImg")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("pathImg");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoriesId");
+
+                    b.ToTable("categoriesPicture");
+                });
+
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ComplaintDb", b =>
                 {
                     b.Property<Guid>("Id")
@@ -70,7 +96,17 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("idUser");
 
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("complaints");
                 });
@@ -103,7 +139,12 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("name");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("orders");
                 });
@@ -124,7 +165,12 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("pathImg");
 
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("pictures_product");
                 });
@@ -135,6 +181,9 @@ namespace JeverlyStore.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("id");
+
+                    b.Property<Guid>("CategoriesId")
+                        .HasColumnType("uuid");
 
                     b.Property<double>("Cost")
                         .HasColumnType("double precision")
@@ -148,16 +197,19 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("idCategories");
 
-                    b.Property<Guid>("IdImg")
-                        .HasColumnType("uuid")
-                        .HasColumnName("idImg");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("name");
 
+                    b.Property<Guid?>("OrderDbId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoriesId");
+
+                    b.HasIndex("OrderDbId");
 
                     b.ToTable("products");
                 });
@@ -178,15 +230,29 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
+                    b.Property<Guid>("IdRequest")
+                        .HasColumnType("uuid")
+                        .HasColumnName("idRequest");
+
                     b.Property<Guid>("IdUser")
                         .HasColumnType("uuid")
                         .HasColumnName("idUser");
+
+                    b.Property<Guid>("RequestId")
+                        .HasColumnType("uuid");
 
                     b.Property<int>("Status")
                         .HasColumnType("integer")
                         .HasColumnName("status");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("RequestId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("requests");
                 });
@@ -229,6 +295,116 @@ namespace JeverlyStore.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("users");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPicture", b =>
+                {
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.CategoriesDb", "Categories")
+                        .WithMany()
+                        .HasForeignKey("CategoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categories");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ComplaintDb", b =>
+                {
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.OrderDb", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.UserDb", "User")
+                        .WithMany("Complaints")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.OrderDb", b =>
+                {
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.UserDb", "User")
+                        .WithMany("Order")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.PicturesProductDb", b =>
+                {
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.ProductDb", "Product")
+                        .WithMany("PicturesProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ProductDb", b =>
+                {
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.CategoriesDb", "Categories")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.OrderDb", null)
+                        .WithMany("Product")
+                        .HasForeignKey("OrderDbId");
+
+                    b.Navigation("Categories");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.RequestDb", b =>
+                {
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.RequestDb", "Request")
+                        .WithMany()
+                        .HasForeignKey("RequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.UserDb", "User")
+                        .WithMany("Request")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Request");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesDb", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.OrderDb", b =>
+                {
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ProductDb", b =>
+                {
+                    b.Navigation("PicturesProducts");
+                });
+
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.UserDb", b =>
+                {
+                    b.Navigation("Complaints");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Request");
                 });
 #pragma warning restore 612, 618
         }

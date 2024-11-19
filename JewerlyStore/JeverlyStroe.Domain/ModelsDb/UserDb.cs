@@ -19,4 +19,11 @@ public class UserDb
     public string PathImage { get; set; }
     [Column("createdAt", TypeName = "timestamp")]
     public DateTime CreatedAt { get; set; }
+    
+    public List<ComplaintDb>Complaints { get; set; }
+    
+    public List<OrderDb>Order { get; set; }
+    
+    public List<RequestDb> Request { get; set; }
+    
 }

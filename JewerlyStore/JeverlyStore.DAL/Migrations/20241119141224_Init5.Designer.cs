@@ -3,6 +3,7 @@ using System;
 using JeverlyStore.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace JeverlyStore.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241119141224_Init5")]
+    partial class Init5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,10 +130,6 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("idProduct");
 
-                    b.Property<Guid>("IdRequest")
-                        .HasColumnType("uuid")
-                        .HasColumnName("idRequest");
-
                     b.Property<Guid>("IdUser")
                         .HasColumnType("uuid")
                         .HasColumnName("idUser");
@@ -140,15 +139,10 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("name");
 
-                    b.Property<Guid>("RequestId")
-                        .HasColumnType("uuid");
-
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RequestId");
 
                     b.HasIndex("UserId");
 
@@ -236,29 +230,15 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
-                    b.Property<Guid>("IdRequest")
-                        .HasColumnType("uuid")
-                        .HasColumnName("idRequest");
-
                     b.Property<Guid>("IdUser")
                         .HasColumnType("uuid")
                         .HasColumnName("idUser");
-
-                    b.Property<Guid>("RequestId")
-                        .HasColumnType("uuid");
 
                     b.Property<int>("Status")
                         .HasColumnType("integer")
                         .HasColumnName("status");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("RequestId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("requests");
                 });
@@ -335,19 +315,11 @@ namespace JeverlyStore.DAL.Migrations
 
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.OrderDb", b =>
                 {
-                    b.HasOne("JeverlyStroe.Domain.ModelsDb.RequestDb", "Request")
-                        .WithMany()
-                        .HasForeignKey("RequestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("JeverlyStroe.Domain.ModelsDb.UserDb", "User")
                         .WithMany("Order")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Request");
 
                     b.Navigation("User");
                 });
@@ -378,25 +350,6 @@ namespace JeverlyStore.DAL.Migrations
                     b.Navigation("Categories");
                 });
 
-            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.RequestDb", b =>
-                {
-                    b.HasOne("JeverlyStroe.Domain.ModelsDb.RequestDb", "Request")
-                        .WithMany()
-                        .HasForeignKey("RequestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("JeverlyStroe.Domain.ModelsDb.UserDb", "User")
-                        .WithMany("Request")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Request");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesDb", b =>
                 {
                     b.Navigation("Products");
@@ -417,8 +370,6 @@ namespace JeverlyStore.DAL.Migrations
                     b.Navigation("Complaints");
 
                     b.Navigation("Order");
-
-                    b.Navigation("Request");
                 });
 #pragma warning restore 612, 618
         }

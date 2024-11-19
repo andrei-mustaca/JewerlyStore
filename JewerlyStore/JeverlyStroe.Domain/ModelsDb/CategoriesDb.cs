@@ -12,4 +12,5 @@ public class CategoriesDb
     public DateTime CreatedAt { get; set; }
     [Column("idImg")]
     public Guid IdImg { get; set; }
+    public List<ProductDb>Products { get; set; }
 }

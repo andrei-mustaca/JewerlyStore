@@ -12,8 +12,11 @@ public class ProductDb
     public string Name { get; set; }
     [Column("cost")]
     public double Cost { get; set; }
-    [Column("idImg")]
-    public Guid IdImg { get; set; }
     [Column("createdAt", TypeName = "timestamp")]
     public DateTime CreatedAt { get; set; }
+    
+    public CategoriesDb Categories { get; set; } 
+    public List<PicturesProductDb> PicturesProducts { get; set; }
+    
+    
 }

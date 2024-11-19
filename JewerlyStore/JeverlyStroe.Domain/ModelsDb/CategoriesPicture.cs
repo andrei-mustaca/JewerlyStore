@@ -1,14 +1,14 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JeverlyStroe.Domain.ModelsDb;
-[Table("pictures_product")]
-public class PicturesProductDb
+[Table("categoriesPicture")]
+public class CategoriesPicture
 {
     [Column("id")]
     public Guid Id { get; set; }
-    [Column("idProduct")]
-    public Guid IdProduct { get; set; }
+    [Column("idCategories")]
+    public Guid IdCategory { get; set; }
     [Column("pathImg")]
     public string PathImg { get; set; }
-    public ProductDb Product { get; set; }
+    public CategoriesDb Categories { get; set; } 
 }

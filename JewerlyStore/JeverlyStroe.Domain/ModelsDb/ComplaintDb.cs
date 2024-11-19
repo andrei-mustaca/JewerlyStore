@@ -12,4 +12,7 @@ public class ComplaintDb
     public Guid IdOrders { get; set; }
     [Column("description")]
     public string Description { get; set; }
+    
+    public UserDb User { get; set; }
+    public OrderDb Order { get; set; }
 }

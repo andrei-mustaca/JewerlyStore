@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JeverlyStroe.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+477e9fdcfb14683db3135f578c08408ac65933b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7caa3657824cad2810b249316ff9c3da03ed2a76")]
 [assembly: System.Reflection.AssemblyProductAttribute("JeverlyStroe.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JeverlyStroe.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
