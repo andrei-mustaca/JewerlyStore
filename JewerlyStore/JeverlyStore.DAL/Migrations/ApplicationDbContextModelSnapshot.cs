@@ -47,7 +47,7 @@ namespace JeverlyStore.DAL.Migrations
                     b.ToTable("categories");
                 });
 
-            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPicture", b =>
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPictureDb", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -238,14 +238,11 @@ namespace JeverlyStore.DAL.Migrations
 
                     b.Property<Guid>("IdRequest")
                         .HasColumnType("uuid")
-                        .HasColumnName("idRequest");
+                        .HasColumnName("idOrder");
 
                     b.Property<Guid>("IdUser")
                         .HasColumnType("uuid")
                         .HasColumnName("idUser");
-
-                    b.Property<Guid>("RequestId")
-                        .HasColumnType("uuid");
 
                     b.Property<int>("Status")
                         .HasColumnType("integer")
@@ -255,8 +252,6 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RequestId");
 
                     b.HasIndex("UserId");
 
@@ -303,7 +298,7 @@ namespace JeverlyStore.DAL.Migrations
                     b.ToTable("users");
                 });
 
-            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPicture", b =>
+            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPictureDb", b =>
                 {
                     b.HasOne("JeverlyStroe.Domain.ModelsDb.CategoriesDb", "Categories")
                         .WithMany()
@@ -380,19 +375,11 @@ namespace JeverlyStore.DAL.Migrations
 
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.RequestDb", b =>
                 {
-                    b.HasOne("JeverlyStroe.Domain.ModelsDb.RequestDb", "Request")
-                        .WithMany()
-                        .HasForeignKey("RequestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("JeverlyStroe.Domain.ModelsDb.UserDb", "User")
                         .WithMany("Request")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Request");
 
                     b.Navigation("User");
                 });

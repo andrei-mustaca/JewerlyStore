@@ -9,7 +9,7 @@ public class RequestDb
     public Guid Id { get; set; }
     [Column("idUser")]
     public Guid IdUser { get; set; }
-    [Column("idRequest")]
+    [Column("idOrder")]
     public Guid IdRequest { get; set; }
     [Column("description")]
     public string Description { get; set; }
@@ -19,5 +19,5 @@ public class RequestDb
     public DateTime CreatedAt { get; set; }
     
     public UserDb User { get; set; }
-    public RequestDb Request { set; get; }
+   
 }

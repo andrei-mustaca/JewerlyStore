@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JewerlyStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7caa3657824cad2810b249316ff9c3da03ed2a76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a62d2ddf71600ec45af3abc186288ad796a3b215")]
 [assembly: System.Reflection.AssemblyProductAttribute("JewerlyStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JewerlyStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

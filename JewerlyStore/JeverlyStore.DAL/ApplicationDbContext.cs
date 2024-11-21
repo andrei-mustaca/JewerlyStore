@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Microsoft.Extensions.Configuration;
 using JeverlyStroe.Domain.ModelsDb;
+using CategoriesPicture = JeverlyStore.DAL.Storage.CategoriesPicture;
+
 namespace JeverlyStore.DAL;
 
 public class ApplicationDbContext:DbContext
@@ -14,7 +16,7 @@ public class ApplicationDbContext:DbContext
     public DbSet<OrderDb>OrderDbs { get; set; }
     public DbSet<ComplaintDb>ComplaintDbs { get; set; }
     public DbSet<CategoriesDb>CategoriesDbs { get; set; }
-    public DbSet<CategoriesPicture>CategoriesPictures { get; set; }
+    public DbSet<CategoriesPictureDb> CategoriesPicturesDb { get; set; }
     protected readonly IConfiguration Configuration;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

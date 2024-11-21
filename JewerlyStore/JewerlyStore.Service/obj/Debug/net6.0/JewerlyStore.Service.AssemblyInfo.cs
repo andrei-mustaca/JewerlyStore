@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JewerlyStore.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7caa3657824cad2810b249316ff9c3da03ed2a76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a62d2ddf71600ec45af3abc186288ad796a3b215")]
 [assembly: System.Reflection.AssemblyProductAttribute("JewerlyStore.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JewerlyStore.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
