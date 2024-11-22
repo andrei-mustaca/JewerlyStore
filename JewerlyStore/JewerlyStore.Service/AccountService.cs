@@ -1,17 +1,18 @@
 using AutoMapper;
+using JeverlyStore.DAL;
 using JeverlyStore.DAL.Interfaces;
 using JeverlyStroe.Domain.Enum;
 using JeverlyStroe.Domain.ModelsDb;
 using JeverlyStroe.Domain.Response;
 using JeverlyStroe.Domain.Models;
 using JewerlyStore.Service.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace JewerlyStore.Service;
 
 public class AccountService:IAccountService
 {
     private readonly IBaseStorage<UserDb> _userStorage;
-    
     private IMapper _mapper { get; set; }
 
     private MapperConfiguration mapperConfiguration = new MapperConfiguration(p =>
@@ -30,7 +31,7 @@ public class AccountService:IAccountService
         try
         {
             var userdb = _mapper.Map<UserDb>(model);
-            if ( _userStorage.GetAll().FirstOrDefault(x => x.Email == model.Email) == null)
+            if (await _userStorage.GetAll().FirstOrDefaultAsync(x => x.Email == model.Email) == null)
             {
                 return new BaseResponse<User>()
                 {
@@ -70,7 +71,7 @@ public class AccountService:IAccountService
             model.CreatedAt=DateTime.Now;
 
             var userdb = _mapper.Map<UserDb>(model);
-            if (_userStorage.GetAll().FirstOrDefault(x => x.Email == model.Email) != null)
+            if (await _userStorage.GetAll().FirstOrDefaultAsync(x => x.Email == model.Email) != null)
             {
                 return new BaseResponse<User>()
                 {

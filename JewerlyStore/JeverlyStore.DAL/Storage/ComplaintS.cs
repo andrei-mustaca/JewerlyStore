@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JeverlyStore.DAL.Storage;
 
-public class Complaint:IBaseStorage<ComplaintDb>
+public class ComplaintS:IBaseStorage<ComplaintDb>
 {
     public readonly ApplicationDbContext _context;
 
-    public Complaint(ApplicationDbContext context)
+    public ComplaintS(ApplicationDbContext context)
     {
         _context = context;
     }

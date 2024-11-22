@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JeverlyStore.DAL.Storage;
 
-public class User:IBaseStorage<UserDb>
+public class UserS:IBaseStorage<UserDb>
 {
     public readonly ApplicationDbContext _context;
 
-    public User(ApplicationDbContext context)
+    public UserS(ApplicationDbContext context)
     {
         _context = context;
     }

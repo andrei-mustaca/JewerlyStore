@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Microsoft.Extensions.Configuration;
 using JeverlyStroe.Domain.ModelsDb;
-using CategoriesPicture = JeverlyStore.DAL.Storage.CategoriesPicture;
 
 namespace JeverlyStore.DAL;
 
@@ -19,17 +18,11 @@ public class ApplicationDbContext:DbContext
     public DbSet<CategoriesPictureDb> CategoriesPicturesDb { get; set; }
     protected readonly IConfiguration Configuration;
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-    optionsBuilder.UseNpgsql(Configuration.GetConnectionString("Host=localhost;Port=5432;Database=JewerlyStore;Username=postgres;password=123456"));
-    }
+   
 
      
 
-    public ApplicationDbContext()
-    {
-        
-    }
+    
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
     {
         

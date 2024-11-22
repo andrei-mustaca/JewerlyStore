@@ -5,6 +5,7 @@ using JeverlyStroe.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using JeverlyStroe.Domain.Models;
 using JewerlyStore.Service;
+using JewerlyStore.Service.Interfaces;
 
 namespace JewerlyStore.Controllers;
 
@@ -12,13 +13,14 @@ public class HomeController : Controller
 {
     private IMapper _mapper { get; set; }
     private readonly ILogger<HomeController> _logger;
-    private AccountService _accountService { get; set; }
+    private IAccountService _accountService { get; set; }
     private MapperConfiguration mapperConfiguration = new MapperConfiguration(p =>
     {
         p.AddProfile<AppMappingProfile>();
     }); 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IAccountService accountService)
     {
+        _accountService = accountService;
         _mapper = mapperConfiguration.CreateMapper();
         _logger = logger;
     }
@@ -82,7 +84,7 @@ public class HomeController : Controller
     [HttpPost]
     public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
     {
-        if (!ModelState.IsValid)
+        if (ModelState.IsValid)
         {
             var user = _mapper.Map<User>(model);
             var response = await _accountService.Register(user);
