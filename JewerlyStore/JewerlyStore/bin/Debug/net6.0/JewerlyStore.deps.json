@@ -8,8 +8,10 @@
     ".NETCoreApp,Version=v6.0": {
       "JewerlyStore/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "JeverlyStore.DAL": "1.0.0",
           "JeverlyStroe.Domain": "1.0.0",
+          "JewerlyStore.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Microsoft.EntityFrameworkCore.Design": "7.0.18",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.18",
@@ -19,6 +21,17 @@
         },
         "runtime": {
           "JewerlyStore.dll": {}
+        }
+      },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -971,6 +984,7 @@
       },
       "JeverlyStore.DAL/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "JeverlyStroe.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Npgsql": "7.0.8",
@@ -986,6 +1000,7 @@
       },
       "JeverlyStroe.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Npgsql": "7.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.18",
@@ -993,6 +1008,23 @@
         },
         "runtime": {
           "JeverlyStroe.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "JewerlyStore.Service/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "JeverlyStore.DAL": "1.0.0",
+          "JeverlyStroe.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.18",
+          "Npgsql": "7.0.8",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.18",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
+        },
+        "runtime": {
+          "JewerlyStore.Service.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1005,6 +1037,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1705,6 +1744,11 @@
       "sha512": ""
     },
     "JeverlyStroe.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JewerlyStore.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

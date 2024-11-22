@@ -13,9 +13,11 @@
     <ItemGroup>
       <ProjectReference Include="..\JeverlyStore.DAL\JeverlyStore.DAL.csproj" />
       <ProjectReference Include="..\JeverlyStroe.Domain\JeverlyStroe.Domain.csproj" />
+      <ProjectReference Include="..\JewerlyStore.Service\JewerlyStore.Service.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.18" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.18">
         <PrivateAssets>all</PrivateAssets>

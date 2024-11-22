@@ -1,15 +1,25 @@
 ﻿using System.Diagnostics;
+using AutoMapper;
+using JeverlyStroe.Domain.Enum;
 using JeverlyStroe.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using JeverlyStroe.Domain.Models;
+using JewerlyStore.Service;
 
 namespace JewerlyStore.Controllers;
 
 public class HomeController : Controller
 {
+    private IMapper _mapper { get; set; }
     private readonly ILogger<HomeController> _logger;
-
+    private AccountService _accountService { get; set; }
+    private MapperConfiguration mapperConfiguration = new MapperConfiguration(p =>
+    {
+        p.AddProfile<AppMappingProfile>();
+    }); 
     public HomeController(ILogger<HomeController> logger)
     {
+        _mapper = mapperConfiguration.CreateMapper();
         _logger = logger;
     }
 
@@ -49,11 +59,18 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Login([FromBody] LoginViewModel model)
+    public async Task<IActionResult> Login([FromBody] LoginViewModel model)
     {
         if (ModelState.IsValid)
         {
-            return Ok(model); 
+            var user = _mapper.Map<User>(model);
+
+            var response = await _accountService.Login(user);
+            if (response.StatusCode == StatucCode.OK)
+            {
+                return Ok(model);
+            }
+            ModelState.AddModelError("",response.Description);
         }
 
         var errors = ModelState.Values.SelectMany(v => v.Errors)
@@ -63,15 +80,21 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Register([FromBody] RegisterViewModel model)
+    public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
     {
         if (!ModelState.IsValid)
         {
-            var errors=ModelState.Values.SelectMany(v => v.Errors)
-                .Select(e=>e.ErrorMessage)
-                .ToList();
-            return BadRequest(errors);
+            var user = _mapper.Map<User>(model);
+            var response = await _accountService.Register(user);
+            if (response.StatusCode==StatucCode.OK)
+            {
+                return Ok(model);
+            }
+            ModelState.AddModelError("",response.Description);
         }
-        return Ok(model);
+        var errors=ModelState.Values.SelectMany(v => v.Errors)
+            .Select(e=>e.ErrorMessage)
+            .ToList();
+        return BadRequest(errors);
     }
 }

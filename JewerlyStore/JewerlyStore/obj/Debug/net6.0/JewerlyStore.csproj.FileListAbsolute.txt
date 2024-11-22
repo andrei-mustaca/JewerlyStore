@@ -85,3 +85,6 @@ C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.JewerlyStore.props
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\obj\Debug\net6.0\JewerlyS.B63BDADC.Up2Date
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.Service.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.Service.pdb

@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1740,10 +1756,60 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "JeverlyStore.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "JeverlyStroe.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.18",
+          "Npgsql": "7.0.8",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.18",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
+        },
+        "compile": {
+          "bin/placeholder/JeverlyStore.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeverlyStore.DAL.dll": {}
+        }
+      },
+      "JeverlyStroe.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Microsoft.EntityFrameworkCore": "7.0.18",
+          "Npgsql": "7.0.8",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.18",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
+        },
+        "compile": {
+          "bin/placeholder/JeverlyStroe.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeverlyStroe.Domain.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -5680,10 +5746,23 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "JeverlyStore.DAL/1.0.0": {
+      "type": "project",
+      "path": "../JeverlyStore.DAL/JeverlyStore.DAL.csproj",
+      "msbuildProject": "../JeverlyStore.DAL/JeverlyStore.DAL.csproj"
+    },
+    "JeverlyStroe.Domain/1.0.0": {
+      "type": "project",
+      "path": "../JeverlyStroe.Domain/JeverlyStroe.Domain.csproj",
+      "msbuildProject": "../JeverlyStroe.Domain/JeverlyStroe.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper >= 13.0.1",
+      "JeverlyStore.DAL >= 1.0.0",
+      "JeverlyStroe.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
@@ -5728,7 +5807,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj": {
+              "projectPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStore.DAL\\JeverlyStore.DAL.csproj"
+            },
+            "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStroe.Domain\\JeverlyStroe.Domain.csproj": {
+              "projectPath": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JeverlyStroe.Domain\\JeverlyStroe.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5746,6 +5832,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.18, )"

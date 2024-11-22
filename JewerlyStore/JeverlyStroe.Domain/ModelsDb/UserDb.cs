@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using JeverlyStroe.Domain.Enum;
+using System.Threading.Tasks;
 namespace JeverlyStroe.Domain.ModelsDb;
 [Table( "users")]
 public class UserDb

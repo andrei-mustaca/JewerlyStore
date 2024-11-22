@@ -13,3 +13,8 @@ C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JewerlyStore.Service.runtimeconfig.json
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.genruntimeconfig.cache
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyStore.Service.sourcelink.json
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JeverlyStore.DAL.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JeverlyStroe.Domain.dll
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JeverlyStore.DAL.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\bin\Debug\net6.0\JeverlyStroe.Domain.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore.Service\obj\Debug\net6.0\JewerlyS.59A12739.Up2Date
