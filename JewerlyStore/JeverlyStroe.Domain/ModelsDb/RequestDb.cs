@@ -10,7 +10,7 @@ public class RequestDb
     [Column("idUser")]
     public Guid IdUser { get; set; }
     [Column("idOrder")]
-    public Guid IdRequest { get; set; }
+    public Guid IdOrder { get; set; }
     [Column("description")]
     public string Description { get; set; }
     [Column("status")]

@@ -88,3 +88,4 @@ C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.Service.dll
 C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\JewerlyStore.Service.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore\bin\Debug\net6.0\FluentValidation.dll

@@ -1,11 +1,15 @@
 ﻿using System.Diagnostics;
+using System.Security.Claims;
 using AutoMapper;
 using JeverlyStroe.Domain.Enum;
 using JeverlyStroe.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using JeverlyStroe.Domain.Models;
+using JeverlyStroe.Domain.Validators;
 using JewerlyStore.Service;
 using JewerlyStore.Service.Interfaces;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace JewerlyStore.Controllers;
 
@@ -60,8 +64,9 @@ public class HomeController : Controller
         return View();
     }
 
+    
     [HttpPost]
-    public async Task<IActionResult> Login([FromBody] LoginViewModel model)
+    public async Task<IActionResult> Login([FromBody] LoginViewModel  model)
     {
         if (ModelState.IsValid)
         {
@@ -70,6 +75,8 @@ public class HomeController : Controller
             var response = await _accountService.Login(user);
             if (response.StatusCode == StatucCode.OK)
             {
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(response.Data));
                 return Ok(model);
             }
             ModelState.AddModelError("",response.Description);
@@ -80,7 +87,7 @@ public class HomeController : Controller
             .ToList();
         return BadRequest(errors);
     }
-
+    
     [HttpPost]
     public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
     {
@@ -98,5 +105,11 @@ public class HomeController : Controller
             .Select(e=>e.ErrorMessage)
             .ToList();
         return BadRequest(errors);
+    }
+    [AutoValidateAntiforgeryToken]
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        return RedirectToAction("Index", "Home");
     }
 }

@@ -9,6 +9,7 @@
       "JewerlyStore/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "FluentValidation": "11.11.0",
           "JeverlyStore.DAL": "1.0.0",
           "JeverlyStroe.Domain": "1.0.0",
           "JewerlyStore.Service": "1.0.0",
@@ -31,6 +32,14 @@
           "lib/net6.0/AutoMapper.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.0"
+          }
+        }
+      },
+      "FluentValidation/11.11.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
           }
         }
       },
@@ -985,6 +994,7 @@
       "JeverlyStore.DAL/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "FluentValidation": "11.11.0",
           "JeverlyStroe.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Npgsql": "7.0.8",
@@ -1001,6 +1011,7 @@
       "JeverlyStroe.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "FluentValidation": "11.11.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Npgsql": "7.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.18",
@@ -1016,6 +1027,7 @@
       "JewerlyStore.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "FluentValidation": "11.11.0",
           "JeverlyStore.DAL": "1.0.0",
           "JeverlyStroe.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
@@ -1044,6 +1056,13 @@
       "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
       "path": "automapper/13.0.1",
       "hashPath": "automapper.13.0.1.nupkg.sha512"
+    },
+    "FluentValidation/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
+      "path": "fluentvalidation/11.11.0",
+      "hashPath": "fluentvalidation.11.11.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

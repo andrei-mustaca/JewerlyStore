@@ -10,7 +10,7 @@ public static class Initializer
 {
     public static void InitializerRepozitories(this IServiceCollection services)
     {
-        services.AddScoped<IBaseStorage<UserDb>, User>();
+        services.AddScoped<IBaseStorage<UserDb>, UserS>();
     }
 
     public static void InitializerServices(this IServiceCollection services)
