@@ -94,15 +94,32 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             var user = _mapper.Map<User>(model);
-            var response = await _accountService.Register(user);
-            if (response.StatusCode==StatucCode.OK)
-            {
-                return Ok(model);
-            }
-            ModelState.AddModelError("",response.Description);
+            var confirm = _mapper.Map<ConfirmEmailViewModel>(model);
+            var code = await _accountService.Register(user);
+            confirm.GeneratedCode = code.Data;
+            return Ok(confirm);
         }
         var errors=ModelState.Values.SelectMany(v => v.Errors)
             .Select(e=>e.ErrorMessage)
+            .ToList();
+        return BadRequest(errors);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> ConfirmEmail([FromBody] ConfirmEmailViewModel model)
+    {
+        var user=_mapper.Map<User>(model);
+        var response = await _accountService.ConfirmEmail(user, model.GeneratedCode, model.CodeConfirm);
+
+        if (response.StatusCode==StatucCode.OK)
+        {
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(response.Data));
+            return Ok(model);
+        }
+        ModelState.AddModelError("",response.Description);
+        var errors = ModelState.Values.SelectMany(v => v.Errors)
+            .Select(e => e.ErrorMessage)
             .ToList();
         return BadRequest(errors);
     }

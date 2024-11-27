@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function (){
-    function hiddenOpen_Closeclick(){
-        let x=document.querySelector(".container-login-registration");
+    function hiddenOpen_Closeclick(conteiner){
+        let x=document.querySelector(conteiner);
         if(x.style.display=="none")
         {
             x.style.display="grid";
@@ -10,9 +10,18 @@ document.addEventListener('DOMContentLoaded',function (){
         }
     }
    
-    document.getElementById("click-to-hide").addEventListener("click",hiddenOpen_Closeclick);
-    document.querySelector(".overlay").addEventListener("click",hiddenOpen_Closeclick);
-    
+    document.getElementById("click-to-hide").addEventListener("click",function () {
+        hiddenOpen_Closeclick(".container-login-registration");
+    });
+    document.getElementById("side-menu-button-click-to-hide").addEventListener("click",function () {
+        hiddenOpen_Closeclick(".container-login-registration");
+    });
+    document.querySelector(".overlay").addEventListener("click",function () {
+        hiddenOpen_Closeclick(".container-login-registration");
+    });
+    document.querySelector(".button_confirm_close").addEventListener("click",function () {
+        hiddenOpen_Closeclick(".confirm-email-container");
+    });
     const signInBtn=document.querySelector('.signin-btn');
     const signUpBtn=document.querySelector('.signup-btn');
     const formBox=document.querySelector('.form-box');
@@ -77,17 +86,20 @@ document.addEventListener('DOMContentLoaded',function (){
                     throw errorData;
                 });
             }
-            return response.json;
+            return response.json();
         });
     }
 
     function displayErrors(errors,errorContainer){
 
         errorContainer.innerHTML='';
-        errors.forEach(error=>{
-            const errorMessage=document.createElement('div');
+        if (!Array.isArray(errors)) {
+            errors = [errors]; // Преобразуем в массив, если это не массив
+        }
+        errors.forEach(error => {
+            const errorMessage = document.createElement('div');
             errorMessage.classList.add('error');
-            errorMessage.textContent=error;
+            errorMessage.textContent = error;
             errorContainer.appendChild(errorMessage);
         });
     }
@@ -100,7 +112,7 @@ document.addEventListener('DOMContentLoaded',function (){
                 form[key].value='';
             }
         }
-        hiddenOpen_Closeclick();
+        hiddenOpen_Closeclick(".container-login-registration");
     }
 
 
@@ -129,12 +141,30 @@ document.addEventListener('DOMContentLoaded',function (){
                 .then(data=>{
                     cleaningAndClosingForm(form,errorContainer);
                     console.log('Успешный ответ:',data);
-                   //location.reload();
+                   hiddenOpen_Closeclick(".confirm-email-container");
+                   confirmEmail(data);
                 })
                 .catch(err=>{
                     displayErrors(err,errorContainer)
                     console.log(err)
                 });
+            function confirmEmail(body) {
+                document.querySelector(".send_confirm").addEventListener('click',function (){
+                    body.codeConfirm=document.getElementById('code_confirm').value;
+                    const requestURL='/Home/ConfirmEmail';
+
+                    sendRequest('POST',requestURL,body)
+                        .then(data=>{
+                            console.log("Код подтверждения:",data);
+                            hiddenOpen_Closeclick(".confirm-email-container");
+                            location.reload();
+                        })
+                        .catch(err=>{
+                            displayErrors(err,errorContainer);
+                            console.log(err)
+                        });
+                })
+            }
         });
     }
     document.getElementById("side-menu-button-click-to-hide").addEventListener("click", hiddenOpen_Closeclick);
