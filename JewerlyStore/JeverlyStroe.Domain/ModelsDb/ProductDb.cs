@@ -14,9 +14,13 @@ public class ProductDb
     public double Cost { get; set; }
     [Column("createdAt", TypeName = "timestamp")]
     public DateTime CreatedAt { get; set; }
+    [Column("pathImg")]
+    public string PathImage { get; set; }
+    [Column("CategoriesDbId1")]
+    public Guid IdC { get; set; }
     
-    public CategoriesDb Categories { get; set; } 
-    public List<PicturesProductDb> PicturesProducts { get; set; }
+    //public CategoriesDb Categories { get; set; } 
+    //public List<PicturesProductDb> PicturesProducts { get; set; }
     
     
 }

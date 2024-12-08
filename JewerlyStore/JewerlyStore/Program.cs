@@ -1,6 +1,8 @@
 using JeverlyStore.DAL;
 using JewerlyStore;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +15,15 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Home/Login");
         options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Home/Login");
+    })
+    .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+    {
+        options.ClientId=builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
+        options.ClientSecret=builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
+        options.Scope.Add("profile");
+        options.ClaimActions.MapJsonKey("picture","picture");
     });
+
 builder.Services.AddControllersWithViews();
 builder.Services.InitializerServices();
 builder.Services.InitializerRepozitories();

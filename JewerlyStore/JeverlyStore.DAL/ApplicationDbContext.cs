@@ -15,7 +15,6 @@ public class ApplicationDbContext:DbContext
     public DbSet<OrderDb>OrderDbs { get; set; }
     public DbSet<ComplaintDb>ComplaintDbs { get; set; }
     public DbSet<CategoriesDb>CategoriesDbs { get; set; }
-    public DbSet<CategoriesPictureDb> CategoriesPicturesDb { get; set; }
     protected readonly IConfiguration Configuration;
 
    

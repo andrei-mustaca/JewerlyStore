@@ -7,12 +7,13 @@
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/Shared.css"/>
-    <link rel="stylesheet" href="~/css/MediaStyle.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/MediaStyle.css"/>
 
 </head>
 <body>
 <script src="~/js/shared_site.js"></script>
 <script src="~/js/LoginRegistrationScript.js"></script>
+
 
 @await Html.PartialAsync("LoginRegistration")
 @await Html.PartialAsync("ConfirmEmailPartial")
@@ -39,8 +40,7 @@
             <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
             <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
             <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
-            <li><a href="#promotion">Акции</a></li>
-            <li><a href="#countries">Каталог</a></li>
+            <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
             <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
             <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li>
         </ul>
@@ -52,8 +52,7 @@
             <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
             <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
             <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
-            <li><a href="#promotion">Акции</a></li>
-            <li><a href="#countries">Каталог</a></li>
+            <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
             <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
             <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li>
         </ul>
@@ -67,7 +66,7 @@
 </div>
 
 </body>
-<footer >
+<footer>
     <p class="text1"> © 2024 MMM</p>
     <p class="text1">Подробнее о нас можете узнать тут:<a href="https://www.instagram.com/v.oo4k0/profilecard/?igsh=dDU5emNhenVvdTZ3" target="_blank">Instagram</a></p>
     <p class="text2">"Ювелирный магазин «Вдохновение» – это место, где каждая украшение рассказывает свою историю. Мы предлагаем уникальные изделия из золота, серебра и драгоценных камней, которые подчеркивают вашу индивидуальность. Наши мастера создают украшения с душой, чтобы вы могли найти то, что вдохновит именно вас. Откройте для себя красоту ювелирного искусства в «Вдохновении»!"</p>

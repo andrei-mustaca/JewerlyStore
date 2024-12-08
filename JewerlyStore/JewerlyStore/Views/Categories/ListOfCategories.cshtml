@@ -1,0 +1,31 @@
+@model List<JeverlyStroe.Domain.ViewModel.CategoriesViewModel>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Каталог";
+}
+<link rel="stylesheet" href="~/css/CategoriesStyle.css"/>
+<div class="container-categories">
+    <div class="link-page"><a href="/Home/SiteInformation">Главная</a>>Каталог</div>
+    <div class="grid-container">
+        @if (Model.Count != 0)
+        {
+            @foreach (var item in Model)
+            {
+                <div class="card-categories" onclick="window.location.href='@Url.Action("ListOfProducts", "Products", new { Id = item.Id })'">
+                    <img src="@item.PathImg" alt="@item.Name" class="card-image" />
+                    <div class="card-overlay">
+                        <div class="card-title">@item.Name</div>
+                        <p class="card-description">
+                            Дата обновления ассортимента: @item.CreatedAt<br />
+                            Перейти к списку товаров =>
+                        </p>
+                        <button class="card-button">Подробнее</button>
+                    </div>
+                    <div class="card-tooltip">Кликните для перехода</div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+

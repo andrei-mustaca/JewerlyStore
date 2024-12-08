@@ -33,33 +33,10 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("timestamp")
                         .HasColumnName("createdAt");
 
-                    b.Property<Guid>("IdImg")
-                        .HasColumnType("uuid")
-                        .HasColumnName("idImg");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("name");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("categories");
-                });
-
-            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPictureDb", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<Guid>("CategoriesId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("IdCategory")
-                        .HasColumnType("uuid")
-                        .HasColumnName("idCategories");
 
                     b.Property<string>("PathImg")
                         .IsRequired()
@@ -68,9 +45,7 @@ namespace JeverlyStore.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoriesId");
-
-                    b.ToTable("categoriesPicture");
+                    b.ToTable("categories");
                 });
 
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ComplaintDb", b =>
@@ -188,7 +163,7 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("id");
 
-                    b.Property<Guid>("CategoriesId")
+                    b.Property<Guid?>("CategoriesDbId")
                         .HasColumnType("uuid");
 
                     b.Property<double>("Cost")
@@ -198,6 +173,10 @@ namespace JeverlyStore.DAL.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp")
                         .HasColumnName("createdAt");
+
+                    b.Property<Guid>("IdC")
+                        .HasColumnType("uuid")
+                        .HasColumnName("CategoriesDbId1");
 
                     b.Property<Guid>("IdCategories")
                         .HasColumnType("uuid")
@@ -211,9 +190,14 @@ namespace JeverlyStore.DAL.Migrations
                     b.Property<Guid?>("OrderDbId")
                         .HasColumnType("uuid");
 
+                    b.Property<string>("PathImage")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("pathImg");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoriesId");
+                    b.HasIndex("CategoriesDbId");
 
                     b.HasIndex("OrderDbId");
 
@@ -236,7 +220,7 @@ namespace JeverlyStore.DAL.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
-                    b.Property<Guid>("IdRequest")
+                    b.Property<Guid>("IdOrder")
                         .HasColumnType("uuid")
                         .HasColumnName("idOrder");
 
@@ -298,17 +282,6 @@ namespace JeverlyStore.DAL.Migrations
                     b.ToTable("users");
                 });
 
-            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.CategoriesPictureDb", b =>
-                {
-                    b.HasOne("JeverlyStroe.Domain.ModelsDb.CategoriesDb", "Categories")
-                        .WithMany()
-                        .HasForeignKey("CategoriesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Categories");
-                });
-
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ComplaintDb", b =>
                 {
                     b.HasOne("JeverlyStroe.Domain.ModelsDb.OrderDb", "Order")
@@ -350,7 +323,7 @@ namespace JeverlyStore.DAL.Migrations
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.PicturesProductDb", b =>
                 {
                     b.HasOne("JeverlyStroe.Domain.ModelsDb.ProductDb", "Product")
-                        .WithMany("PicturesProducts")
+                        .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -360,17 +333,13 @@ namespace JeverlyStore.DAL.Migrations
 
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ProductDb", b =>
                 {
-                    b.HasOne("JeverlyStroe.Domain.ModelsDb.CategoriesDb", "Categories")
+                    b.HasOne("JeverlyStroe.Domain.ModelsDb.CategoriesDb", null)
                         .WithMany("Products")
-                        .HasForeignKey("CategoriesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoriesDbId");
 
                     b.HasOne("JeverlyStroe.Domain.ModelsDb.OrderDb", null)
                         .WithMany("Product")
                         .HasForeignKey("OrderDbId");
-
-                    b.Navigation("Categories");
                 });
 
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.RequestDb", b =>
@@ -392,11 +361,6 @@ namespace JeverlyStore.DAL.Migrations
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.OrderDb", b =>
                 {
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.ProductDb", b =>
-                {
-                    b.Navigation("PicturesProducts");
                 });
 
             modelBuilder.Entity("JeverlyStroe.Domain.ModelsDb.UserDb", b =>

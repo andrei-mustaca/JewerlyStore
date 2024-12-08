@@ -5,8 +5,40 @@
       "PackagePath": "staticwebassets\\JewerlyStore.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\ImageUser\\andrejmustaca6@gmail.com-avatar.jpg",
+      "PackagePath": "staticwebassets\\ImageUser\\andrejmustaca6@gmail.com-avatar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\ImageUser\\volreealreear@gmail.com-avatar.jpg",
+      "PackagePath": "staticwebassets\\ImageUser\\volreealreear@gmail.com-avatar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\Amulet.jfif",
+      "PackagePath": "staticwebassets\\Images\\Amulet.jfif"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\Earring.jfif",
+      "PackagePath": "staticwebassets\\Images\\Earring.jfif"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\Ring.jfif",
+      "PackagePath": "staticwebassets\\Images\\Ring.jfif"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\andrejmustaca6@gmail.com designer.jpg",
+      "PackagePath": "staticwebassets\\Images\\andrejmustaca6@gmail.com designer.jpg"
+    },
+    {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\designer.jpg",
       "PackagePath": "staticwebassets\\Images\\designer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\ggg.png",
+      "PackagePath": "staticwebassets\\Images\\ggg.png"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\google.webp",
+      "PackagePath": "staticwebassets\\Images\\google.webp"
     },
     {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\jewelry.png",
@@ -57,8 +89,16 @@
       "PackagePath": "staticwebassets\\Images\\product6.jpg"
     },
     {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\volreealreear@gmail.com designer.jpg",
+      "PackagePath": "staticwebassets\\Images\\volreealreear@gmail.com designer.jpg"
+    },
+    {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\Images\\work.jpg",
       "PackagePath": "staticwebassets\\Images\\work.jpg"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\CategoriesStyle.css",
+      "PackagePath": "staticwebassets\\css\\CategoriesStyle.css"
     },
     {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\LoginRegistrationStyle.css",
@@ -67,6 +107,10 @@
     {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\MediaStyle.css",
       "PackagePath": "staticwebassets\\css\\MediaStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\ProductStyle.css",
+      "PackagePath": "staticwebassets\\css\\ProductStyle.css"
     },
     {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\Shared.css",

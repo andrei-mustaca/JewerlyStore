@@ -7,7 +7,8 @@ public class Product
     public string Name { get; set; }
     public double Cost { get; set; }
     public DateTime CreatedAt { get; set; }
+    public string PathImage { get; set; }
     
-    public Categories Categories { get; set; } 
-    public List<PicturesProduct> PicturesProducts { get; set; }
+   // public Categories Categories { get; set; } 
+    //public List<PicturesProduct> PicturesProducts { get; set; }
 }

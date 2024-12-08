@@ -137,7 +137,6 @@ span{
     background-color: #2c3034;
     color:#fff;
     padding: 10px 50px;
-    margin-top: 10px;
     font-size: inherit;
     width:fit-content;
 }
@@ -244,3 +243,35 @@ span{
     background: #f9e2e2;
     border-radius: 4px;
 }
+
+.google-img{
+    width: 10%;
+    position: absolute;
+    bottom: 0; /* Элемент будет находиться у нижней границы родителя */ /* При необходимости, выравнивание по горизонтали */
+    right: 50px; /* Занимает всю ширину контейнера */
+    text-align: center;
+    margin-right: 20px;
+}
+
+.form-btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.form-btn-container a{
+    display: contents;
+}
+
+.google-text{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0; /* Элемент будет находиться у нижней границы родителя */
+    left: 0; /* При необходимости, выравнивание по горизонтали */
+    right: 0; /* Занимает всю ширину контейнера */
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    color: #000;
+}
+
+

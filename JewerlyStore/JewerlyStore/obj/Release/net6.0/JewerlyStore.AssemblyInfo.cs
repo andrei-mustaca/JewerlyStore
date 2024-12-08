@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("352f9d22-b935-4839-be4b-80f07b7865cd")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("JewerlyStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edaa9f13e5ad842e19812a15df2d1ac1eba6999e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b357e9069a68b48cb9b16b302e9f3f197b0ae75a")]
 [assembly: System.Reflection.AssemblyProductAttribute("JewerlyStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JewerlyStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

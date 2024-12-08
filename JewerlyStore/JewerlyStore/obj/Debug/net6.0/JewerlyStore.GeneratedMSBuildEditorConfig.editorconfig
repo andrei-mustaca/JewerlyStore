@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\andre\OneDrive\Рабочий стол\Учебная практика\JewerlyStore\JewerlyStore\JewerlyStore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Categories/ListOfCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xMaXN0T2ZDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Home/Complaints.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wbGFpbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Home/SiteInformation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaXRlSW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Products/ListOfProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcTGlzdE9mUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Products/ProductPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcUHJvZHVjdFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andre/OneDrive/Рабочий стол/Учебная практика/JewerlyStore/JewerlyStore/JewerlyStore/Views/Shared/ConfirmEmailPartial.cshtml]

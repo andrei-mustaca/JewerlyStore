@@ -10,7 +10,7 @@ public class CategoriesDb
     public string Name { get; set; }
     [Column("createdAt", TypeName = "timestamp")]
     public DateTime CreatedAt { get; set; }
-    [Column("idImg")]
-    public Guid IdImg { get; set; }
+    [Column("pathImg")]
+    public string PathImg { get; set; }
     public List<ProductDb>Products { get; set; }
 }

@@ -1,7 +1,7 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 <link rel="stylesheet" href="~/css/LoginRegistrationStyle.css"/>
 <link rel="stylesheet" href="~/css/MediaStyle.css"/>
-<div class="container-login-registration">
+<div class="container-login-registration" style="display:none;">
     <div class="block-container">
         <div class="block">
             <section class="block_item">
@@ -28,8 +28,13 @@
                     <input type="password" placeholder=" "/>
                     <span>Пароль</span>
                 </label>
-
-                <div class="form-btn form_btn_signin">Войти</div>
+                <div class="form-btn-container">
+                    <div class="form-btn form_btn_signin">Войти</div>
+                    <a class="google">
+                        <img src="~/Images/ggg.png" class="google-img">
+                        <text class="google-text">Войти с помощью Google</text>
+                    </a>
+                </div>    
                 <div id="error-messages-signin"></div>
             </form>
 
@@ -56,11 +61,11 @@
                     <input type="password" placeholder=" "/>
                     <span>Подтвердите пароль</span>
                 </label>
-                
                 <div class="form-btn form_btn_signup">Зарегистрироваться</div>
                 <div id="error-messages-signup"></div>
             </form>
+        </div>
+    
     </div>
     <div class="overlay"></div>
-    </div>
 </div>

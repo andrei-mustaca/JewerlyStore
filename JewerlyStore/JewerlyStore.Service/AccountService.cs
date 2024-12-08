@@ -89,13 +89,6 @@ public class AccountService:IAccountService
         {
             Random random = new Random();
             string confirmationCode = $"{random.Next(10)}{random.Next(10)}{random.Next(10)}{random.Next(10)}";
-            //model.PathImage = "/Images/designer.jpg";
-            //model.CreatedAt=DateTime.Now;
-            //model.Password = HashPasswordHelper.HashPassword(model.Password);
-
-            //await _validationsrules.ValidateAndThrowAsync(model);
-
-            //var userdb = _mapper.Map<UserDb>(model);
             if (await _userStorage.GetAll().FirstOrDefaultAsync(x => x.Email == model.Email) != null)
             {
                 return new BaseResponse<string>()
@@ -105,8 +98,6 @@ public class AccountService:IAccountService
             }
 
             await SendEmail(model.Email,confirmationCode);
-            //await _userStorage.Add(userdb);
-            //var result = AuthenticateUserHelper.Authenticate(model);
             return new BaseResponse<string>()
             {
                 Data = confirmationCode,
@@ -195,6 +186,46 @@ public class AccountService:IAccountService
             {
                 Data = result,
                 Description = "Объект добавился",
+                StatusCode = StatucCode.OK
+            };
+        }
+        catch (Exception e)
+        {
+            return new BaseResponse<ClaimsIdentity>()
+            {
+                Description = e.Message,
+                StatusCode = StatucCode.InternalServerError
+            };
+        }
+    }
+
+    public async Task<BaseResponse<ClaimsIdentity>> IsCreatedAccount(User model)
+    {
+        try
+        {
+            var userdb = new UserDb();
+            if (await _userStorage.GetAll().FirstOrDefaultAsync(x => x.Email == model.Email) == null)
+            {
+                model.Password = HashPasswordHelper.HashPassword("google");
+                model.CreatedAt = DateTime.Now;
+                
+                userdb=_mapper.Map<UserDb>(model);
+
+                await _userStorage.Add(userdb);
+
+                var resultRegister = AuthenticateUserHelper.Authenticate(model);
+                return new BaseResponse<ClaimsIdentity>()
+                {
+                    Data = resultRegister,
+                    Description = "Объект добавился",
+                    StatusCode = StatucCode.OK
+                };
+            }
+            var resultLogin = AuthenticateUserHelper.Authenticate(model);
+            return new BaseResponse<ClaimsIdentity>()
+            {
+                Data = resultLogin,
+                Description = "Объект уже был создан",
                 StatusCode = StatucCode.OK
             };
         }

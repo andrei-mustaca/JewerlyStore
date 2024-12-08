@@ -14,5 +14,15 @@ public class AppMappingProfile:Profile
         CreateMap<User, RegisterViewModel>().ReverseMap();
         CreateMap<RegisterViewModel,ConfirmEmailViewModel>().ReverseMap();
         CreateMap<User,ConfirmEmailViewModel>().ReverseMap();
+
+        CreateMap<Categories,CategoriesDb>().ReverseMap();
+        CreateMap<Categories, CategoriesViewModel>().ReverseMap();
+
+        CreateMap<Product,ProductDb>().ReverseMap();
+        CreateMap<Product,ProductForListOfProductViewModel>().ReverseMap();
+        CreateMap<Product, ProductPageViewModel>().ReverseMap();
+
+        CreateMap<PicturesProduct, PicturesProductDb>().ReverseMap();
+        CreateMap<PicturesProduct, PictureViewModel>().ReverseMap();
     }
 }
