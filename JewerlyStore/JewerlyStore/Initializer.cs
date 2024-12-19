@@ -13,6 +13,7 @@ public static class Initializer
         services.AddScoped<IBaseStorage<UserDb>, UserS>();
         services.AddScoped<IBaseStorage<CategoriesDb>,CategoriesS>();
         services.AddScoped<IBaseStorage<ProductDb>,ProductS>();
+        services.AddScoped<IBaseStorage<PicturesProductDb>, PicturesProductS>();
     }
 
     public static void InitializerServices(this IServiceCollection services)

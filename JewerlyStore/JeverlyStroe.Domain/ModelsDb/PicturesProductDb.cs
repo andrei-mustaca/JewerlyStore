@@ -10,5 +10,5 @@ public class PicturesProductDb
     public Guid IdProduct { get; set; }
     [Column("pathImg")]
     public string PathImg { get; set; }
-    public ProductDb Product { get; set; }
+    //public ProductDb Product { get; set; }
 }

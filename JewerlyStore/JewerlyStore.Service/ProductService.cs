@@ -20,8 +20,9 @@ public class ProductService:IProductService
         p.AddProfile<AppMappingProfile>();
     });
 
-    public ProductService(IBaseStorage<ProductDb> productStorage)
+    public ProductService(IBaseStorage<ProductDb> productStorage,IBaseStorage<PicturesProductDb> pictureStorage)
     {
+        _pictureStorage = pictureStorage;
         _productStorage = productStorage;
         _mapper = _mapperConfiguration.CreateMapper();
     }
@@ -61,7 +62,7 @@ public class ProductService:IProductService
     {
         try
         {
-            var productsFilter=GetAllProductByIdCategories(filter.IdCategories).Data;
+            var productsFilter=GetAllProductByIdCategories(filter.IdProduct).Data;
             if (filter != null && productsFilter != null)
             {
                 if (filter.PriceMax!=2000||filter.PriceMin!=0)

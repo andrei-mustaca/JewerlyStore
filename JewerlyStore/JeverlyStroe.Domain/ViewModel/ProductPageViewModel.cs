@@ -12,5 +12,7 @@ public class ProductPageViewModel
 
 public class PictureViewModel
 {
+    public Guid Id { get; set; }
+    public Guid IdProduct { get; set; }
     public string PathImg { get; set; }
 }

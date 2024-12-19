@@ -101,7 +101,11 @@ public class HomeController : Controller
             var confirm = _mapper.Map<ConfirmEmailViewModel>(model);
             var code = await _accountService.Register(user);
             confirm.GeneratedCode = code.Data;
-            return Ok(confirm);
+            if (code.StatusCode == StatucCode.OK)
+            {
+                return Ok(confirm);
+            }
+            ModelState.AddModelError("",code.Description);
         }
         var errors=ModelState.Values.SelectMany(v => v.Errors)
             .Select(e=>e.ErrorMessage)

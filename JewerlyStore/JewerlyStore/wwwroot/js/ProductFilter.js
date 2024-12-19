@@ -68,5 +68,6 @@ document.addEventListener("DOMContentLoaded", function (){
                 productList.innerHTML+=productItem;
             });
         }
+        location.reload();
     }
 });

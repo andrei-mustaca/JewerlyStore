@@ -39,7 +39,7 @@ public class ProductsController:Controller
     {
         var result = _productService.GetProductByFilter(filter);
         var filteredProducts = _mapper.Map<List<ProductForListOfProductViewModel>>(result.Data);
-        return Json(filteredProducts);
+        return Ok(filteredProducts);
     }
 
     public async Task<IActionResult> ProductPage(Guid id)
