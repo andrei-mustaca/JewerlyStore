@@ -197,4 +197,29 @@ public class HomeController : Controller
 
         return filePath;
     }
+    
+    public IActionResult Profile()
+    {
+        if (User.Identity.IsAuthenticated)
+        {
+            var email = User.Identity.Name; // Если email хранится в Claims
+            var user = _accountService.GetUserByEmail(email);
+
+            if (user != null)
+            {
+                var model = new ProfileViewModel
+                {
+                    Login = user.Login,
+                    Email = user.Email,
+                    PathImage = user.PathImage,
+                    CreatedAt = user.CreatedAt
+                };
+
+                return View(model);
+            }
+        }
+
+        return RedirectToAction("Login", "Account");
+    }
+
 }

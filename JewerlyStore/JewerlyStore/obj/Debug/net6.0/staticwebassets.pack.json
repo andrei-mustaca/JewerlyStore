@@ -177,6 +177,10 @@
       "PackagePath": "staticwebassets\\css\\ProductStyle.css"
     },
     {
+      "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\ProfileStyle.css",
+      "PackagePath": "staticwebassets\\css\\ProfileStyle.css"
+    },
+    {
       "Id": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\Shared.css",
       "PackagePath": "staticwebassets\\css\\Shared.css"
     },

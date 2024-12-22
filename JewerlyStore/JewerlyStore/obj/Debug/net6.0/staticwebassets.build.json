@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zip6AyeqcfK13x++gmeuixMN3ybZhSLRvQUTHTGa+ig=",
+  "Hash": "8EotHC+OfbdD/k/6fI2GGG0k3ja2Lg2FfQCR/WL5lBc=",
   "Source": "JewerlyStore",
   "BasePath": "_content/JewerlyStore",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\ProductStyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\ProfileStyle.css",
+      "SourceId": "JewerlyStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\",
+      "BasePath": "_content/JewerlyStore",
+      "RelativePath": "css/ProfileStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ProfileStyle.css"
     },
     {
       "Identity": "C:\\Users\\andre\\OneDrive\\Рабочий стол\\Учебная практика\\JewerlyStore\\JewerlyStore\\JewerlyStore\\wwwroot\\css\\Shared.css",

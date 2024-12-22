@@ -11,4 +11,5 @@ public interface IAccountService
     Task<BaseResponse<ClaimsIdentity>> Login(User model);
     Task<BaseResponse<ClaimsIdentity>>ConfirmEmail(User model, string code,string confirmationCode);
     Task<BaseResponse<ClaimsIdentity>>IsCreatedAccount(User model);
+    public User GetUserByEmail(string email);
 }

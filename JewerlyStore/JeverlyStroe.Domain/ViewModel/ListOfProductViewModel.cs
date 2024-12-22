@@ -4,6 +4,7 @@ public class ListOfProductViewModel
 {
     public List<ProductForListOfProductViewModel>Products { get; set; }
     public Guid IdCategories { get; set; }
+    public string Query { get; set; }
 }
 
 public class ProductForListOfProductViewModel

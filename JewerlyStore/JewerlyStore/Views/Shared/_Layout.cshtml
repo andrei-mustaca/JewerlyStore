@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Authorization
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,24 +38,50 @@
 <div id="header-bottom">
     <div class="menu">
         <ul>
+            @if (User.Identity.IsAuthenticated)
+            {
             <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
             <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
             <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
             <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
             <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
             <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li>
+            <li><a asp-controller="Home" asp-action="Profile">Профиль</a></li>
+            }
+            @if (!User.Identity.IsAuthenticated)
+            {
+            <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
+            <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
+            <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+            <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
+            <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
+            <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li>
+            }
         </ul>
     </div>
 </div>
 <div id="side-menu" class="side-menu">
     <div>
         <ul>
-            <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
-            <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
-            <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
-            <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
-            <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
-            <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
+                <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
+                <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+                <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
+                <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
+                <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li>
+                <li><a asp-controller="Home" asp-action="Profile">Профиль</a></li>
+            }
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
+                <li><a asp-controller="Home" asp-action="Main">Главная</a></li>
+                <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+                <li><a asp-controller="Categories" asp-action="ListOfCategories">Каталог</a></li>
+                <li><a asp-controller="Home" asp-action="CustomProduct">Изделия на заказ</a></li>
+                <li><a asp-controller="Home" asp-action="Complaints">Жалобы</a></li> 
+            }
         </ul>
     </div>
     <button class="button" id="side-menu-button-click-to-hide" type="button" name="button">Войти</button>
